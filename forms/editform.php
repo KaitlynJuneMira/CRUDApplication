@@ -4,7 +4,7 @@
     // getting id of the data from url
     $id = $_GET['id'];
     // selecting data associated with this particular id
-    $result = mysqli_query($dbc, "SELECT * FROM tblsubjects WHERE subject_id=$id");
+    $result = mysqli_query($dbc, "SELECT * FROM tblsubjects WHERE Subject_ID=$id");
     while($res = mysqli_fetch_array($result)){
         $code = $res['subject_Code'];
         $name = $res['subject_Name'];
