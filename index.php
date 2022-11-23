@@ -1,8 +1,10 @@
 <?php
+
     //including the database connection file
     include_once("dbConnection/db_connect.php");
     //including the fetch file
     include_once("functions/fetch.php");
+    
 ?>
 
 <!DOCTYPE html>
