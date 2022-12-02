@@ -1,6 +1,6 @@
 <?php
     // including the database connection file
-    include_once("../dbConnection/db_connection.php");
+    include_once("../dbConnection/db_connect.php");
     if(isset($_POST['update'])){
         $id = $_POST['id'];
         $code = $_POST['code'];
@@ -15,7 +15,7 @@
             }
         } else{
             //updating the table
-            mysqli_query($dbc, "UPDATE tblsubjects SET subject_Code='$code', subject_Name='$name' WHERE Subject_ID='$id'");
+            mysqli_query($dbc, "UPDATE tblsubjects SET subject_code='$code', subject_name='$name' WHERE dubject_id='$id'");
             // redirecting to the display page. In our case, it is index.php
             header("Location: ../index.php");
         }
